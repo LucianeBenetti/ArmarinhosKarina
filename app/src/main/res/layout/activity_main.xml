@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/agulhas"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        style="@style/TextView"
+        android:gravity="center"
+        android:text="Cadastrar Produtos"/>
+    <TextView
+        style="@style/TextView"
+        android:text="Escolha uma Categoria"/>
+
+    <Spinner
+        style="@style/Spinner"
+        android:id="@+id/spCategorias"/>
+    <EditText
+        style="@style/EditText"
+        android:hint="Digite o nome do Produto"
+        android:id="@+id/editTextNomeProduto"
+        />
+    <EditText
+        style="@style/EditText"
+        android:hint="Digite o preço do produto"
+        android:id="@+id/editTextPrecoProduto"
+        />
+    <Button
+        style="@style/Button"
+        android:onClick="salvarproduto"
+        android:text="Salvar Produto"/>
+
+    <TextView
+        style="@style/TextView"
+        android:text="Lista de Produtos"/>
+    <ListView
+        style="@style/ListView"
+        android:id="@+id/lvProdutos"/>
+
+</LinearLayout>
